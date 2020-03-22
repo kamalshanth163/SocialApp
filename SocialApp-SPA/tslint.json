@@ -38,7 +38,6 @@
     "object-literal-key-quotes": [true, "as-needed"],
     "object-literal-sort-keys": false,
     "ordered-imports": false,
-    "quotemark": [true, "double", "avoid-escape", "avoid-template"],
     "trailing-comma": false,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
@@ -53,5 +52,6 @@
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true
   },
-  "rulesDirectory": ["codelyzer"]
+  "rulesDirectory": ["codelyzer"],
+  "quotemark": [false]
 }
