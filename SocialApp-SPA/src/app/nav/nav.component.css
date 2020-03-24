@@ -1,3 +1,31 @@
-.dropdown-toggle, .dropdown-item{
+/* 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding: 20px;
+}
+
+.navbar .container{
+    margin: 0 auto;
+    padding: 10px;
+} */
+
+.dropdown-toggle {
     cursor: pointer;
+}
+
+.dropdown-item{
+    padding: 10px;
+    cursor: pointer;
+    background: white;
+    color: #111;
+}
+
+.dropdown-item:hover{
+    background: rgb(17, 51, 82);
+    color: rgb(224, 224, 224);
 }
