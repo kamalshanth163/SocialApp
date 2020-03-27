@@ -12,13 +12,16 @@
     padding: 10px;
     border-radius: 4px;
   }
+  .nav-tabs > li.open, .member-tabset > .nav-tabs > li{
+    border-bottom: 4px solid #5674a100;
+  }
   
   .nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
     border-bottom: 4px solid #5674a15e;
   }
   
   .member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
-    border: 0;
+    /* border: 0; */
     background: none !important;
     color: #333333;
   }
@@ -32,12 +35,15 @@
   }
   
   .member-tabset > .nav-tabs > li.active {
-    border-bottom: 4px solid rgb(55, 74, 122);
+    border-bottom: 4px solid rgb(31, 41, 66);
     position: relative;
   }
   
   .member-tabset > .nav-tabs > li.active > a {
     border: 0 !important;
+    color: #333333;
+  }
+  .member-tabset > .nav-tabs > li.active > a:hover {
     color: #333333;
   }
   

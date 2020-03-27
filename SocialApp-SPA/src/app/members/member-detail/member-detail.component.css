@@ -1,3 +1,4 @@
+
 .container{
     width: 70%;
 }
@@ -16,6 +17,11 @@
     border-top: none;
 }
 
+.tab-panel{
+    height: 500px;
+    /* overflow: scroll; */
+}
+
 .title h4{
     font-weight: bold;
 }
@@ -27,3 +33,4 @@
     align-content: center;
 
 }
+
