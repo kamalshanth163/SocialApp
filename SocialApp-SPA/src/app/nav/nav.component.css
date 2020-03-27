@@ -1,18 +1,21 @@
-/* 
-*{
+
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 .navbar{
     padding: 20px;
+    height: 60px;
+    font-size: 14px;
 }
 
 .navbar .container{
+    width: 70%;
     margin: 0 auto;
     padding: 10px;
-} */
+}
 
 .dropdown-toggle {
     cursor: pointer;
