@@ -1,13 +1,11 @@
-
-/* *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
-
+} 
 .navbar{
     padding: 20px;
-    height: 60px;
+    height: 50px;
     font-size: 14px;
 }
 
@@ -16,19 +14,33 @@
     margin: 0 auto;
     padding: 10px;
 }
+.navbar form .form-control{
+    padding: 5px 10px;
+}
+.navbar form .btn{
+    padding: 5px 10px;
+}
+
+.dropdown{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .dropdown-toggle {
     cursor: pointer;
 }
 
 .dropdown-item{
-    padding: 10px;
+    padding: 10px 20px;
+    margin: 0 !important;
     cursor: pointer;
-    background: white;
-    color: #111;
+    background: rgb(49, 60, 83);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
 }
 
 .dropdown-item:hover{
-    background: rgb(17, 51, 82);
-    color: rgb(224, 224, 224);
+    background: rgb(74, 88, 102);
+    color: rgb(255, 255, 255);
 }
