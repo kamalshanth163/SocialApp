@@ -1,0 +1,76 @@
+img.img-thumbnail{
+    height: 100px;
+    min-width: 100px !important;
+    margin-bottom: 2px;
+}
+
+.nv-file-over{
+    border: dotted 3px red;
+}
+
+input[type=file]{
+    color: transparent;
+}
+
+.photos-section{
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    /* overflow: scroll; */
+}
+
+.photos-section img{
+    width: 10px;
+    height: auto;
+    border: none !important;
+}
+
+.photos-section .text-center{
+    font-size: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.photos-section .text-center .btn{
+    padding: 0px 4px !important;
+    font-size: 12px;
+}
+.photos-section .text-center .btn-danger{
+    background: white;
+    color: rgb(124, 124, 124);
+    border: none;
+}
+
+.btn-active{
+    background: rgb(0, 31, 97);
+    color: rgb(255, 255, 255);
+}
+.btn-fade{
+    background: rgba(218, 218, 218, 0);
+    color: rgb(105, 105, 105);
+}
+
+.photo-uploader{
+    background: rgb(243, 243, 243);
+    padding: 10px;
+}
+.photo-uploader h3{
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+}
+
+.photo-uploader .upload-drop-zone{
+    background: rgb(255, 255, 255);
+}
+
+.photo-uploader .upload-drop-zone i{
+    color: rgb(151, 151, 151);
+    font-size: 30px;
+    padding: 10px;
+}
+
+.photo-uploader .choose-file-btn{
+    background: none;
+    border: 0px !important;
+    font-size: 14px;
+    margin: 0 6px;
+}
+

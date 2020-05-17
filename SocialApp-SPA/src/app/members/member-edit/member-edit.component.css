@@ -7,6 +7,11 @@
     width: 55%;
     height: auto;
 }
+.card{
+    box-shadow: 0px 2px 10px rgb(219, 219, 219);
+    border: none;
+    border-radius: 10px;
+}
 .card-body{
     padding: 0 25px;
 }
@@ -15,6 +20,20 @@
     padding: 10px 15px;
     background-color: #fff;
     border-top: none;
+    border-radius: 10px;
+}
+
+tab {
+    padding: 0 20px;
+
+}
+
+.tab-panel{
+    background: white;
+    box-shadow: 0px 2px 10px rgb(219, 219, 219);
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .title h4{

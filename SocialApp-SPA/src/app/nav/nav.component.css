@@ -7,6 +7,7 @@
     padding: 20px;
     height: 50px;
     font-size: 14px;
+    background: rgb(10, 30, 59);
 }
 
 .navbar .container{
@@ -16,9 +17,24 @@
 }
 .navbar form .form-control{
     padding: 5px 10px;
+    border: none;
 }
 .navbar form .btn{
     padding: 5px 10px;
+}
+.nav-item{
+    margin-right: 10px;
+    padding: 6px;
+}
+.nav-item a{
+    color: rgb(255, 255, 255);
+}
+.nav-item:hover{
+    color: rgb(246, 246, 246);
+}
+.nav-item.active{
+    background:rgb(40, 190, 155);
+    border-radius: 2px;
 }
 
 .dropdown{
@@ -27,6 +43,13 @@
     padding: 0;
 }
 
+.navbar .profile-img{
+    max-height: 50px;
+    border: none;
+    display: inline;
+    border-radius: 50%;
+    padding: 6px;
+}
 .dropdown-toggle {
     cursor: pointer;
 }
@@ -35,12 +58,12 @@
     padding: 10px 20px;
     margin: 0 !important;
     cursor: pointer;
-    background: rgb(49, 60, 83);
+    background: rgb(40, 190, 155);
     color: rgb(255, 255, 255);
     font-size: 14px;
 }
 
 .dropdown-item:hover{
-    background: rgb(74, 88, 102);
+    background: rgb(32, 173, 140);
     color: rgb(255, 255, 255);
 }
