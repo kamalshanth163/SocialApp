@@ -4,10 +4,10 @@
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "../node_modules/alertifyjs/build/css/alertify.min.css";
 @import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
+@import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
 
-
-body{
-  background: rgb(245, 245, 245); 
+body {
+  background: rgb(245, 245, 245);
 }
 
 .tab-panel {
@@ -15,25 +15,30 @@ body{
   padding: 10px;
   border-radius: 4px;
 }
-.nav-tabs > li.open, .member-tabset > .nav-tabs > li{
+.nav-tabs > li.open,
+.member-tabset > .nav-tabs > li {
   border-bottom: 4px solid #5674a100;
 }
 
-.nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
+.nav-tabs > li.open,
+.member-tabset > .nav-tabs > li:hover {
   border-bottom: 4px solid #5674a15e;
 }
 
-.member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
+.member-tabset > .nav-tabs > li.open > a,
+.member-tabset > .nav-tabs > li:hover > a {
   /* border: 0; */
   background: none !important;
   color: #333333;
 }
 
-.member-tabset > .nav-tabs > li.open > a > i, .member-tabset > .nav-tabs > li:hover > a > i {
+.member-tabset > .nav-tabs > li.open > a > i,
+.member-tabset > .nav-tabs > li:hover > a > i {
   color: #a6a6a6;
 }
 
-.member-tabset > .nav-tabs > li.open .dropdown-menu, .member-tabset > .nav-tabs > li:hover .dropdown-menu {
+.member-tabset > .nav-tabs > li.open .dropdown-menu,
+.member-tabset > .nav-tabs > li:hover .dropdown-menu {
   margin-top: 100px;
 }
 
@@ -55,14 +60,14 @@ body{
 }
 
 tab h4 {
-    margin: 20px 10px 10px;
-    font-size: 16px;
-    font-weight: bold;
+  margin: 20px 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 tab p {
-    margin: 20px 10px 10px;
-    font-size: 14px;
+  margin: 20px 10px 10px;
+  font-size: 14px;
 }
 
 tab label {
