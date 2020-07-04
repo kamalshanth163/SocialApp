@@ -10,7 +10,8 @@ using SocialApp_API.Dtos;
 using SocialApp_API.Helpers;
 using SocialApp_API.Models;
 
-namespace SocialApp_API.Controllers {
+namespace SocialApp_API.Controllers 
+{
     [ServiceFilter (typeof (LogUserActivity))]
     [Authorize]
     [Route ("api/[controller]")]
