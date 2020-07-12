@@ -1,0 +1,45 @@
+.container{
+    margin-top: 0px;
+    padding: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.container h1{
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    padding: 20px;
+    font-size: 80px;
+}
+.container h3{
+    text-align: center;
+    margin-bottom: -10px;
+    color: rgb(160, 160, 160);
+}
+.container .lead{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container .feature{
+    margin: 20px auto;
+}
+
+.container ul li{
+    list-style: circle;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: rgb(223, 223, 223);
+    color: rgb(59, 59, 59);
+    margin: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.btn-register{
+    background: rgb(3, 153, 65);
+    border: none;
+    border-radius: 10px
+}

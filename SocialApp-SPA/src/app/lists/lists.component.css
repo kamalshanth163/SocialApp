@@ -1,0 +1,8 @@
+.notice-list{
+    margin: 0 auto;
+}
+.notice-list h3{
+    color: rgb(168, 168, 168);
+    vertical-align: middle;
+    padding: 100px;
+}

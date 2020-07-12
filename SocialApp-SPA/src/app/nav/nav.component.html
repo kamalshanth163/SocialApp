@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand mr-4" [routerLink]="['/home']">Social App</a>
+    <a class="navbar-brand mr-4" [routerLink]="['/home']">SocialApp</a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/members']">Matches</a>
+        <a class="nav-link" [routerLink]="['/members']">People</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/lists']">Lists</a>
+        <a class="nav-link" [routerLink]="['/lists']">Connection</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['/messages']">Messages</a>
@@ -35,7 +35,11 @@
       </div>
     </div>
     <span *ngIf="loggedIn()" class="ml-2">
-      <img class="profile-img" src="{{ photoUrl || '../../../../assets/user.png' }}" alt="" />
+      <img
+        class="profile-img"
+        src="{{ photoUrl || '../../../../assets/user.png' }}"
+        alt=""
+      />
     </span>
     <!-- Login form -->
     <form

@@ -121,6 +121,7 @@ namespace SocialApp_API.Data {
             }
 
             messages = messages.OrderByDescending(d => d.MessageSent);
+            
 
             return await PagedList<Message>.CreateAsync(messages, messageParams.PageNumber, messageParams.PageSize);
         }

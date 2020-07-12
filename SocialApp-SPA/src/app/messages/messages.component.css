@@ -7,3 +7,12 @@ table {
 td {
     vertical-align: middle;
 }
+
+.notice-msg{
+    margin: 0 auto;
+}
+.notice-msg h3{
+    color: rgb(168, 168, 168);
+    vertical-align: middle;
+    padding: 100px;
+}

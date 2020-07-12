@@ -35,7 +35,6 @@ namespace SocialApp_API {
                 x.UseLazyLoadingProxies();
                 x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
-
             ConfigureServices(services);
         }
 
@@ -43,15 +42,12 @@ namespace SocialApp_API {
         {
             services.AddDbContext<DataContext> (x => {
                 x.UseLazyLoadingProxies();
-                x.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
+                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-
             ConfigureServices(services);
         }
     
-    
         public void ConfigureServices (IServiceCollection services) {
-            services.AddDbContext<DataContext> (x => x.UseSqlite (Configuration.GetConnectionString ("DefaultConnection")));
             services.AddControllers ().AddNewtonsoftJson (opt => {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
@@ -89,9 +85,11 @@ namespace SocialApp_API {
                         }
                     });
                 });
+                app.UseHsts();
             }
 
-            // app.UseHttpsRedirection();
+            // app.UseDeveloperExceptionPage ();
+            app.UseHttpsRedirection();
             app.UseRouting ();
             app.UseCors (x => x.AllowAnyOrigin ().AllowAnyMethod ().AllowAnyHeader ());
             app.UseAuthentication ();

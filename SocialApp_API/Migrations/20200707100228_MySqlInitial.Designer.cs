@@ -9,7 +9,7 @@ using SocialApp_API.Data;
 namespace SocialApp_API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200705042818_MySqlInitial")]
+    [Migration("20200707100228_MySqlInitial")]
     partial class MySqlInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -28,16 +28,27 @@
     </div>
   </div>
 
-  <div class="row m-4" *ngIf="messages.length == 0">
-    <h3>No messages</h3>
+  <div class="row m-4 content" *ngIf="messages.length == 0">
+    <div class="notice-msg">
+      <h3 *ngIf="messageContainer == 'Unread'" >No unread messages yet ... </h3>
+      <h3 *ngIf="messageContainer == 'Inbox'" >Your inbox is empty ... </h3>
+      <h3 *ngIf="messageContainer == 'Outbox'" >Your outbox is empty ... </h3>
+    </div>
   </div>
 
-  <div class="row" *ngIf="messages.length > 0">
+  <div class="row content" *ngIf="messages.length > 0">
     <table class="table table-hover" style="cursor: pointer;">
       <tr>
         <th style="width: 40%;">Message</th>
-        <th style="width: 20%;">From / To</th>
-        <th style="width: 20%;">Sent / Received</th>
+
+        <th *ngIf="messageContainer == 'Unread'" style="width: 20%;">From</th>
+        <th *ngIf="messageContainer == 'Inbox'" style="width: 20%;">From</th>
+        <th *ngIf="messageContainer == 'Outbox'" style="width: 20%;">To</th>
+
+        <th *ngIf="messageContainer == 'Unread'" style="width: 20%;">Received</th>
+        <th *ngIf="messageContainer == 'Inbox'" style="width: 20%;">Received</th>
+        <th *ngIf="messageContainer == 'Outbox'" style="width: 20%;">Sent</th>
+
         <th style="width: 20%;"></th>
       </tr>
       <tr
@@ -74,7 +85,7 @@
   </div>
 </div>
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center pagination">
   <pagination
     [boundaryLinks]="true"
     [totalItems]="pagination.totalItems"

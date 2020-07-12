@@ -7,7 +7,7 @@
 @import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
 
 body {
-  background: rgb(245, 245, 245);
+  background: whitesmoke;
 }
 
 .tab-panel {
@@ -73,4 +73,26 @@ tab p {
 tab label {
   margin: 0 10px;
   font-size: 14px;
+}
+
+.notice {
+  text-align: center;
+  color: rgb(163, 163, 163);
+}
+.notice h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  margin-top: 0px;
+}
+
+.content {
+  /* background: white; */
+  padding: 20px;
+  min-height: 300px;
+  margin: 20px;
+  border-radius: 10px;
 }

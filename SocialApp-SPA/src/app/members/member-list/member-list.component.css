@@ -2,3 +2,25 @@
     width: 70%;
     padding: 20px;
 }
+
+.status-filter button{
+    font-size: 14px;
+    padding: 6px;
+    width: 120px;
+}
+.btn{
+    font-size: 14px;
+}
+.pagination{
+    margin-top: -20px;
+}
+
+.filter-bar{
+    font-size: 12px;
+}
+.filter-bar input{
+    border: none;
+}
+.filter-bar select{
+    border: none;
+}
